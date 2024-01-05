@@ -1,0 +1,90 @@
+/* Basic reset to remove default padding and margin */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Blog post styling */
+.blog-post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Existing styles ... */
+
+/* Theme Toggle Button Styling */
+.theme-toggle {
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme header, .dark-theme footer {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.dark-theme .theme-toggle {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
