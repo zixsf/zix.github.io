@@ -109,7 +109,7 @@ footer {
   }
   
   #heart:after {
-    left: 50px;
+    left: -50px;
     transform: rotate(45deg);
     transform-origin: 100% 100%;
   }
