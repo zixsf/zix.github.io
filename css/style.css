@@ -60,7 +60,7 @@ footer {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Existing styles ... */
+
 
 /* Theme Toggle Button Styling */
 .theme-toggle {
@@ -88,3 +88,42 @@ footer {
     color: #fff;
 }
 
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin: 50px auto;
+    background: red;
+  }
+  
+  #heart:before,
+  #heart:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  #heart:after {
+    left: 50px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  
+  @keyframes beat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    75% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  
+  #heart {
+    animation: beat 1s infinite;
+  }
+  
